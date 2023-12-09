@@ -31,10 +31,10 @@ int	my_printf(char f, va_list arg)
 	else if (f == 'p')
 	{
 		count = ft_putstr("0x");
-		count += ft_putnbr_base(va_arg(arg, unsigned int), "0123456789abcdef");
+		count += ft_putnbr_base(va_arg(arg, unsigned long), "0123456789abcdef");
 	}
 	else
-		count += ft_putchar(f);
+		count = ft_putchar('%');
 	return (count);
 }
 

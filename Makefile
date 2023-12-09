@@ -3,7 +3,7 @@ AR = ar rc
 CC = cc
 
 
-CFILES = ft_putchar.c ft_putnbr.c ft_putnbr_base.c ft_putstr.c 
+CFILES = ft_printf.c ft_putchar.c ft_putnbr.c ft_putnbr_base.c ft_putstr.c 
 OBJ = ${CFILES:.c=.o} 
 CFLAGS = -Wall -Wextra -Werror
 

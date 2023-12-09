@@ -19,9 +19,15 @@ int	ft_putstr(char *str)
 
 	i = 0;
 	count = 0;
+	if (!str)
+	{
+		write(1, "(null)", 6);
+		return (6);
+	}
 	while (str[i])
 	{
-		count += ft_putchar(str[i]);
+		write(1, &str[i], 1);
+		count++;
 		i++;
 	}
 	return (count);
