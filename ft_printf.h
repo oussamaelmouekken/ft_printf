@@ -13,6 +13,7 @@
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 # include <stdarg.h>
+# include <stdio.h>
 # include <unistd.h>
 
 int	ft_putnbr(int nb);
@@ -20,4 +21,5 @@ int	ft_putchar(char c);
 int	ft_putstr(char *str);
 int	ft_putnbr_base(unsigned long int nbr, char *base);
 int	ft_printf(const char *f, ...);
+
 #endif
